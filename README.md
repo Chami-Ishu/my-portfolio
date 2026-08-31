@@ -1,5 +1,4 @@
-# my-portfolio
-My Personal Portfolio
+
 # 🌐 My Personal Portfolio Website
 
 > A colorful, animated, and responsive personal portfolio built with HTML, CSS & JavaScript.
@@ -55,7 +54,7 @@ my-portfolio/
 - 🏠 **Hero** — Introduction with photo & social links
 - 👩 **About** — Summary & stats
 - 🛠️ **Skills** — Languages, Frontend, Database & Tools
-- 💼 **Projects** — NSBM Student Hub & more
+- 💼 **Projects** — TinyBlooms, NSBM Student Hub & more
 - 🎓 **Education** — University & A/L
 - 🏆 **Certifications** — FigMate UI/UX Workshop 2025
 - 📬 **Contact** — Contact form & social links
