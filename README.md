@@ -14,7 +14,7 @@ My Personal Portfolio
 
 ## 👩‍💻 About
 
-This is my personal portfolio website showcasing my skills, projects, education, and certifications as a 2nd Year Computer Science undergraduate at NSBM Green University.
+This is my personal portfolio website showcasing my skills, projects, education, and certifications as a Computer Science undergraduate at NSBM Green University.
 
 ---
 
