@@ -8,597 +8,912 @@
 
     <meta
         name="description"
-        content="Portfolio of Chamishka Ishani, a Computer Science undergraduate interested in web development and software engineering."
+        content="Portfolio of Chamishka Ishani, a Computer Science undergraduate interested in software and web development."
+    >
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap"
+        rel="stylesheet"
     >
 
     <link rel="stylesheet" href="style.css">
-
-    <!-- Google Font -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Playfair+Display:wght@600;700&display=swap"
-        rel="stylesheet"
-    >
 </head>
 
 <body>
 
-    <!-- ================= NAVBAR ================= -->
+<!-- =====================================================
+     NAVIGATION
+===================================================== -->
 
-    <header class="navbar">
-        <div class="nav-container">
+<header class="navbar">
 
-            <a href="#home" class="logo">
+    <div class="container nav-container">
+
+        <a href="#home" class="logo">
+            Chamishka<span>.</span>
+        </a>
+
+        <nav class="nav-links" id="navLinks">
+
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#skills">Skills</a>
+            <a href="#projects">Projects</a>
+            <a href="#education">Education</a>
+            <a href="#contact">Contact</a>
+
+        </nav>
+
+        <button
+            class="menu-btn"
+            id="menuBtn"
+            aria-label="Open navigation menu"
+        >
+            ☰
+        </button>
+
+    </div>
+
+</header>
+
+
+<!-- =====================================================
+     HERO
+===================================================== -->
+
+<main>
+
+<section class="hero" id="home">
+
+    <div class="container hero-container">
+
+        <!-- HERO LEFT -->
+
+        <div class="hero-content">
+
+            <p class="hello-text">
+                Hello, I'm
+            </p>
+
+            <h1>
+                Chamishka Ishani
+            </h1>
+
+            <h2>
+                Computer Science Undergraduate
+            </h2>
+
+            <p class="hero-description">
+                An aspiring software and web developer currently pursuing
+                a BSc (Honours) in Computer Science at NSBM Green University.
+                I enjoy building practical applications, learning modern
+                technologies, and turning ideas into simple digital experiences.
+            </p>
+
+            <div class="hero-buttons">
+
+                <a href="#projects" class="btn primary-btn">
+                    View My Projects
+                </a>
+
+                <a href="cv.pdf" class="btn secondary-btn" download>
+                    Download CV
+                </a>
+
+                <a href="#contact" class="btn outline-btn">
+                    Contact Me
+                </a>
+
+            </div>
+
+            <div class="social-links">
+
+                <a
+                    href="https://github.com/Chami-Ishu"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                >
+                    GitHub ↗
+                </a>
+
+                <a
+                    href="https://www.linkedin.com/in/chamishka-ishani-8003603a5"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                >
+                    LinkedIn ↗
+                </a>
+
+            </div>
+
+        </div>
+
+
+        <!-- HERO RIGHT -->
+
+        <div class="hero-profile">
+
+            <div class="profile-glow"></div>
+
+            <div class="profile-circle">
+
+                <img
+                    src="images/profile.jpg"
+                    alt="Chamishka Ishani"
+                    id="profileImage"
+                >
+
+                <div
+                    class="profile-placeholder"
+                    id="profilePlaceholder"
+                >
+                    CI
+                </div>
+
+            </div>
+
+            <div class="profile-caption">
+                <span>✦</span>
+                Aspiring Software Developer
+                <span>✦</span>
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =====================================================
+     QUICK STATS
+===================================================== -->
+
+<section class="quick-section">
+
+    <div class="container quick-grid">
+
+        <div class="quick-card">
+            <strong>01</strong>
+            <span>Computer Science Undergraduate</span>
+        </div>
+
+        <div class="quick-card">
+            <strong>02</strong>
+            <span>Full-Stack Project Experience</span>
+        </div>
+
+        <div class="quick-card">
+            <strong>03</strong>
+            <span>Open to Internship Opportunities</span>
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =====================================================
+     ABOUT
+===================================================== -->
+
+<section class="section" id="about">
+
+    <div class="container">
+
+        <div class="section-heading reveal">
+
+            <p class="section-label">
+                ABOUT ME
+            </p>
+
+            <h2>
+                Learning, building and growing as a developer.
+            </h2>
+
+        </div>
+
+
+        <div class="about-grid reveal">
+
+            <div class="about-main">
+
+                <p>
+                    I am a Computer Science undergraduate at
+                    <strong>NSBM Green University</strong>, currently
+                    developing my knowledge and practical skills in
+                    software and web development.
+                </p>
+
+                <p>
+                    I enjoy creating user-friendly web applications and
+                    exploring both frontend and backend technologies.
+                    Through academic and personal projects, I have gained
+                    experience working with technologies such as
+                    HTML, CSS, JavaScript, React, Java, Spring Boot and MySQL.
+                </p>
+
+                <p>
+                    I am motivated to continue learning, work on real-world
+                    problems, and gain professional industry experience
+                    through an internship opportunity.
+                </p>
+
+            </div>
+
+
+            <div class="about-highlight">
+
+                <span class="highlight-icon">
+                    ✦
+                </span>
+
+                <h3>
+                    My Career Goal
+                </h3>
+
+                <p>
+                    To grow into a skilled software developer by gaining
+                    practical experience, working with experienced teams,
+                    and continuously improving my technical skills.
+                </p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =====================================================
+     SKILLS
+===================================================== -->
+
+<section class="section skills-section" id="skills">
+
+    <div class="container">
+
+        <div class="section-heading reveal">
+
+            <p class="section-label">
+                TECHNICAL SKILLS
+            </p>
+
+            <h2>
+                Technologies I'm familiar with.
+            </h2>
+
+        </div>
+
+
+        <div class="skills-categories">
+
+            <!-- FRONTEND -->
+
+            <div class="skill-category reveal">
+
+                <div class="category-number">
+                    01
+                </div>
+
+                <div>
+
+                    <h3>
+                        Frontend Development
+                    </h3>
+
+                    <div class="skill-list">
+
+                        <span>HTML5</span>
+                        <span>CSS3</span>
+                        <span>JavaScript</span>
+                        <span>React</span>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- BACKEND -->
+
+            <div class="skill-category reveal">
+
+                <div class="category-number">
+                    02
+                </div>
+
+                <div>
+
+                    <h3>
+                        Backend Development
+                    </h3>
+
+                    <div class="skill-list">
+
+                        <span>Java</span>
+                        <span>Spring Boot</span>
+                        <span>REST API</span>
+                        <span>Maven</span>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- DATABASE -->
+
+            <div class="skill-category reveal">
+
+                <div class="category-number">
+                    03
+                </div>
+
+                <div>
+
+                    <h3>
+                        Database
+                    </h3>
+
+                    <div class="skill-list">
+
+                        <span>MySQL</span>
+                        <span>SQL</span>
+                        <span>JPA</span>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- TOOLS -->
+
+            <div class="skill-category reveal">
+
+                <div class="category-number">
+                    04
+                </div>
+
+                <div>
+
+                    <h3>
+                        Tools & Development
+                    </h3>
+
+                    <div class="skill-list">
+
+                        <span>Git</span>
+                        <span>GitHub</span>
+                        <span>VS Code</span>
+                        <span>IntelliJ IDEA</span>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <!-- CURRENTLY LEARNING -->
+
+        <div class="learning-box reveal">
+
+            <div>
+
+                <p class="section-label">
+                    CURRENTLY LEARNING
+                </p>
+
+                <h3>
+                    Expanding my development skills.
+                </h3>
+
+            </div>
+
+            <div class="learning-tags">
+
+                <span>Advanced JavaScript</span>
+                <span>React</span>
+                <span>REST APIs</span>
+                <span>Spring Boot</span>
+                <span>Mobile Development</span>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =====================================================
+     PROJECTS
+===================================================== -->
+
+<section class="section" id="projects">
+
+    <div class="container">
+
+        <div class="section-heading reveal">
+
+            <p class="section-label">
+                FEATURED PROJECTS
+            </p>
+
+            <h2>
+                Practical work that reflects my learning.
+            </h2>
+
+            <p class="section-intro">
+                A selection of academic and personal projects that have
+                helped me develop my programming, problem-solving and
+                software development skills.
+            </p>
+
+        </div>
+
+
+        <div class="projects-grid">
+
+
+            <!-- TINYBLOOMS -->
+
+            <article class="project-card featured-project reveal">
+
+                <div class="project-top">
+
+                    <span class="project-number">
+                        01
+                    </span>
+
+                    <span class="project-badge">
+                        Individual Project
+                    </span>
+
+                </div>
+
+                <div class="project-content">
+
+                    <p class="project-type">
+                        Full-Stack E-Commerce
+                    </p>
+
+                    <h3>
+                        TinyBlooms
+                    </h3>
+
+                    <p>
+                        A full-stack flower bouquet e-commerce website
+                        developed to practice frontend, backend, database
+                        and REST API development.
+                    </p>
+
+                    <ul class="project-features">
+
+                        <li>
+                            Customer browsing and shopping experience
+                        </li>
+
+                        <li>
+                            Cart management and checkout
+                        </li>
+
+                        <li>
+                            Unique order ID and order tracking
+                        </li>
+
+                        <li>
+                            Admin dashboard and order management
+                        </li>
+
+                        <li>
+                            Order status and sales summary
+                        </li>
+
+                    </ul>
+
+                    <div class="project-tags">
+
+                        <span>React</span>
+                        <span>JavaScript</span>
+                        <span>Spring Boot</span>
+                        <span>MySQL</span>
+                        <span>REST API</span>
+
+                    </div>
+
+                    <a
+                        href="https://github.com/Chami-Ishu/TinyBlooms"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        class="project-link"
+                    >
+                        View Project on GitHub →
+                    </a>
+
+                </div>
+
+            </article>
+
+
+            <!-- TALENTFLOW -->
+
+            <article class="project-card reveal">
+
+                <div class="project-top">
+
+                    <span class="project-number">
+                        02
+                    </span>
+
+                    <span class="project-badge">
+                        Group Project
+                    </span>
+
+                </div>
+
+                <div class="project-content">
+
+                    <p class="project-type">
+                        University Project
+                    </p>
+
+                    <h3>
+                        TalentFlow
+                    </h3>
+
+                    <p>
+                        A university group project developed to strengthen
+                        software development, teamwork and problem-solving
+                        skills.
+                    </p>
+
+                    <div class="project-tags">
+
+                        <span>Software Development</span>
+                        <span>Teamwork</span>
+                        <span>Problem Solving</span>
+
+                    </div>
+
+                </div>
+
+            </article>
+
+
+            <!-- TASK MANAGEMENT -->
+
+            <article class="project-card reveal">
+
+                <div class="project-top">
+
+                    <span class="project-number">
+                        03
+                    </span>
+
+                    <span class="project-badge">
+                        Group Project
+                    </span>
+
+                </div>
+
+                <div class="project-content">
+
+                    <p class="project-type">
+                        University Project
+                    </p>
+
+                    <h3>
+                        Task Management System
+                    </h3>
+
+                    <p>
+                        A task management application developed as part
+                        of a university group project, focusing on
+                        application functionality and teamwork.
+                    </p>
+
+                    <div class="project-tags">
+
+                        <span>Web Development</span>
+                        <span>Teamwork</span>
+                        <span>Application Development</span>
+
+                    </div>
+
+                </div>
+
+            </article>
+
+
+            <!-- SALON NILU -->
+
+            <article class="project-card reveal">
+
+                <div class="project-top">
+
+                    <span class="project-number">
+                        04
+                    </span>
+
+                    <span class="project-badge">
+                        Group Project
+                    </span>
+
+                </div>
+
+                <div class="project-content">
+
+                    <p class="project-type">
+                        University Project
+                    </p>
+
+                    <h3>
+                        Salon Nilu
+                    </h3>
+
+                    <p>
+                        A salon-related web application developed as
+                        part of a university group project.
+                    </p>
+
+                    <div class="project-tags">
+
+                        <span>Web Development</span>
+                        <span>Teamwork</span>
+                        <span>UI Development</span>
+
+                    </div>
+
+                </div>
+
+            </article>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =====================================================
+     WHAT I'M LOOKING FOR
+===================================================== -->
+
+<section class="section opportunity-section">
+
+    <div class="container">
+
+        <div class="opportunity-box reveal">
+
+            <div class="opportunity-icon">
+                ✦
+            </div>
+
+            <div class="opportunity-content">
+
+                <p class="section-label">
+                    CAREER OPPORTUNITY
+                </p>
+
+                <h2>
+                    Looking for an internship where I can learn and contribute.
+                </h2>
+
+                <p>
+                    I am currently seeking an internship opportunity in
+                    software development or web development where I can
+                    apply my academic knowledge, gain practical industry
+                    experience, learn from experienced professionals,
+                    and contribute to real-world projects.
+                </p>
+
+                <a href="#contact" class="btn primary-btn">
+                    Let's Connect
+                </a>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =====================================================
+     EDUCATION
+===================================================== -->
+
+<section class="section education-section" id="education">
+
+    <div class="container">
+
+        <div class="section-heading reveal">
+
+            <p class="section-label">
+                EDUCATION
+            </p>
+
+            <h2>
+                My academic journey.
+            </h2>
+
+        </div>
+
+
+        <div class="education-card reveal">
+
+            <div class="education-icon">
+                🎓
+            </div>
+
+            <div class="education-content">
+
+                <span>
+                    Undergraduate
+                </span>
+
+                <h3>
+                    BSc (Honours) in Computer Science
+                </h3>
+
+                <p>
+                    NSBM Green University
+                </p>
+
+                <small>
+                    Computer Science • Undergraduate Studies
+                </small>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =====================================================
+     CONTACT
+===================================================== -->
+
+<section class="section contact-section" id="contact">
+
+    <div class="container">
+
+        <div class="contact-box reveal">
+
+            <div class="contact-heading">
+
+                <p class="section-label">
+                    GET IN TOUCH
+                </p>
+
+                <h2>
+                    Let's build something together.
+                </h2>
+
+                <p>
+                    If you're looking for an enthusiastic Computer Science
+                    undergraduate for an internship opportunity, I'd be
+                    happy to connect and learn more.
+                </p>
+
+            </div>
+
+
+            <div class="contact-links">
+
+                <a
+                    href="mailto:your-email@example.com"
+                    class="contact-item"
+                >
+
+                    <span class="contact-icon">
+                        ✉
+                    </span>
+
+                    <div>
+                        <small>Email</small>
+                        <strong>Contact Me</strong>
+                    </div>
+
+                </a>
+
+
+                <a
+                    href="https://www.linkedin.com/in/chamishka-ishani-8003603a5"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="contact-item"
+                >
+
+                    <span class="contact-icon">
+                        in
+                    </span>
+
+                    <div>
+                        <small>LinkedIn</small>
+                        <strong>Connect with Me</strong>
+                    </div>
+
+                </a>
+
+
+                <a
+                    href="https://github.com/Chami-Ishu"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="contact-item"
+                >
+
+                    <span class="contact-icon">
+                        Git
+                    </span>
+
+                    <div>
+                        <small>GitHub</small>
+                        <strong>View My Work</strong>
+                    </div>
+
+                </a>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+</main>
+
+
+<!-- =====================================================
+     FOOTER
+===================================================== -->
+
+<footer class="footer">
+
+    <div class="container footer-content">
+
+        <div>
+
+            <a href="#home" class="footer-logo">
                 Chamishka<span>.</span>
             </a>
 
-            <nav class="nav-links">
-                <a href="#home">Home</a>
-                <a href="#about">About</a>
-                <a href="#skills">Skills</a>
-                <a href="#projects">Projects</a>
-                <a href="#education">Education</a>
-                <a href="#contact">Contact</a>
-            </nav>
-
-            <button class="menu-btn" id="menuBtn">
-                ☰
-            </button>
+            <p>
+                Computer Science Undergraduate
+            </p>
 
         </div>
-    </header>
-
-
-    <!-- ================= HERO ================= -->
-
-    <main>
-
-        <section class="hero" id="home">
-
-            <div class="hero-container">
-
-                <div class="hero-content">
-
-                    <p class="hero-small-text">
-                        Hello, I'm
-                    </p>
-
-                    <h1>
-                        Chamishka <span>Ishani</span>
-                    </h1>
-
-                    <h2>
-                        Computer Science Undergraduate
-                    </h2>
-
-                    <p class="hero-description">
-                        I am a Computer Science undergraduate passionate about
-                        web development, software development, and creating
-                        simple and user-friendly digital experiences.
-                    </p>
-
-                    <div class="hero-buttons">
-
-                        <a href="#projects" class="btn primary-btn">
-                            View My Projects
-                        </a>
-
-                        <a href="#contact" class="btn secondary-btn">
-                            Contact Me
-                        </a>
-
-                    </div>
-
-                    <div class="social-links">
-
-                        <a
-                            href="https://github.com/Chami-Ishu"
-                            target="_blank"
-                            aria-label="GitHub"
-                        >
-                            GitHub
-                        </a>
-
-                        <a
-                            href="https://linkedin.com/in/chamishka-ishani-8003603a5"
-                            target="_blank"
-                            aria-label="LinkedIn"
-                        >
-                            LinkedIn
-                        </a>
-
-                    </div>
-
-                </div>
-
-
-                <div class="hero-card">
-
-                    <div class="hero-card-inner">
-
-                        <div class="code-icon">
-                            &lt;/&gt;
-                        </div>
-
-                        <h3>
-                            Building with Code
-                        </h3>
-
-                        <p>
-                            Learning, creating, and growing as a developer.
-                        </p>
-
-                    </div>
-
-                </div>
-
-            </div>
-
-        </section>
-
-
-        <!-- ================= ABOUT ================= -->
-
-        <section class="section about-section" id="about">
-
-            <div class="section-container">
-
-                <div class="section-heading">
-                    <p class="section-label">ABOUT ME</p>
-
-                    <h2>
-                        A little about <span>me</span>
-                    </h2>
-                </div>
-
-                <div class="about-content">
-
-                    <div class="about-text">
-
-                        <p>
-                            I am currently pursuing a BSc (Hons) in Computer
-                            Science at NSBM Green University. I am interested
-                            in web development and software development, and
-                            I enjoy learning how technology can be used to
-                            create useful and user-friendly applications.
-                        </p>
-
-                        <p>
-                            I have experience working with technologies such
-                            as HTML, CSS, JavaScript, React, Java, Spring Boot,
-                            and MySQL. Through academic and individual
-                            projects, I am developing my skills in both
-                            frontend and backend development.
-                        </p>
-
-                        <p>
-                            I am continuously improving my technical knowledge
-                            and looking forward to gaining practical industry
-                            experience.
-                        </p>
-
-                    </div>
-
-                    <div class="about-highlight">
-
-                        <div class="highlight-box">
-                            <span>🎓</span>
-                            <div>
-                                <strong>Education</strong>
-                                <p>BSc (Hons) Computer Science</p>
-                            </div>
-                        </div>
-
-                        <div class="highlight-box">
-                            <span>💻</span>
-                            <div>
-                                <strong>Focus</strong>
-                                <p>Web & Software Development</p>
-                            </div>
-                        </div>
-
-                        <div class="highlight-box">
-                            <span>🌱</span>
-                            <div>
-                                <strong>Currently</strong>
-                                <p>Learning & Building Projects</p>
-                            </div>
-                        </div>
-
-                    </div>
-
-                </div>
-
-            </div>
-
-        </section>
-
-
-        <!-- ================= SKILLS ================= -->
-
-        <section class="section skills-section" id="skills">
-
-            <div class="section-container">
-
-                <div class="section-heading">
-                    <p class="section-label">MY SKILLS</p>
-
-                    <h2>
-                        Technologies I <span>work with</span>
-                    </h2>
-                </div>
-
-                <div class="skills-grid">
-
-                    <div class="skill-card">
-                        <div class="skill-icon">🌐</div>
-                        <h3>HTML5</h3>
-                        <p>Web Structure</p>
-                    </div>
-
-                    <div class="skill-card">
-                        <div class="skill-icon">🎨</div>
-                        <h3>CSS3</h3>
-                        <p>Web Styling</p>
-                    </div>
-
-                    <div class="skill-card">
-                        <div class="skill-icon">⚡</div>
-                        <h3>JavaScript</h3>
-                        <p>Web Development</p>
-                    </div>
-
-                    <div class="skill-card">
-                        <div class="skill-icon">⚛️</div>
-                        <h3>React</h3>
-                        <p>Frontend Development</p>
-                    </div>
-
-                    <div class="skill-card">
-                        <div class="skill-icon">☕</div>
-                        <h3>Java</h3>
-                        <p>Programming</p>
-                    </div>
-
-                    <div class="skill-card">
-                        <div class="skill-icon">🌱</div>
-                        <h3>Spring Boot</h3>
-                        <p>Backend Development</p>
-                    </div>
-
-                    <div class="skill-card">
-                        <div class="skill-icon">🗄️</div>
-                        <h3>MySQL</h3>
-                        <p>Database</p>
-                    </div>
-
-                    <div class="skill-card">
-                        <div class="skill-icon">🔧</div>
-                        <h3>Git & GitHub</h3>
-                        <p>Version Control</p>
-                    </div>
-
-                </div>
-
-            </div>
-
-        </section>
-
-
-        <!-- ================= PROJECTS ================= -->
-
-        <section class="section projects-section" id="projects">
-
-            <div class="section-container">
-
-                <div class="section-heading">
-                    <p class="section-label">MY WORK</p>
-
-                    <h2>
-                        Featured <span>Projects</span>
-                    </h2>
-
-                    <p class="section-description">
-                        A selection of projects I have worked on while
-                        developing my technical skills.
-                    </p>
-                </div>
-
-
-                <div class="projects-grid">
-
-                    <!-- TinyBlooms -->
-
-                    <article class="project-card featured-project">
-
-                        <div class="project-top">
-                            <span class="project-badge">
-                                ⭐ Featured Project
-                            </span>
-
-                            <span class="project-type">
-                                Individual Project
-                            </span>
-                        </div>
-
-                        <div class="project-icon">
-                            🌸
-                        </div>
-
-                        <h3>
-                            TinyBlooms
-                        </h3>
-
-                        <p class="project-subtitle">
-                            Full-Stack Flower Bouquet E-Commerce Website
-                        </p>
-
-                        <p>
-                            A full-stack e-commerce web application for
-                            browsing handmade flower bouquets, managing a
-                            shopping cart, placing orders, and tracking
-                            orders using an Order ID.
-                        </p>
-
-                        <div class="project-tech">
-                            <span>React</span>
-                            <span>Spring Boot</span>
-                            <span>Java</span>
-                            <span>MySQL</span>
-                            <span>REST API</span>
-                        </div>
-
-                        <div class="project-links">
-
-                            <a
-                                href="https://github.com/Chami-Ishu/TinyBlooms"
-                                target="_blank"
-                            >
-                                View on GitHub →
-                            </a>
-
-                        </div>
-
-                    </article>
-
-
-                    <!-- TalentFlow -->
-
-                    <article class="project-card">
-
-                        <div class="project-top">
-                            <span class="project-type">
-                                Group Project
-                            </span>
-                        </div>
-
-                        <div class="project-icon">
-                            👥
-                        </div>
-
-                        <h3>
-                            TalentFlow
-                        </h3>
-
-                        <p class="project-subtitle">
-                            Team-Based Software Project
-                        </p>
-
-                        <p>
-                            A collaborative academic project developed as
-                            part of my university coursework, focusing on
-                            software development and practical application
-                            design.
-                        </p>
-
-                        <div class="project-tech">
-                            <span>Software Development</span>
-                            <span>Teamwork</span>
-                        </div>
-
-                    </article>
-
-
-                    <!-- Task Management -->
-
-                    <article class="project-card">
-
-                        <div class="project-top">
-                            <span class="project-type">
-                                Group Project
-                            </span>
-                        </div>
-
-                        <div class="project-icon">
-                            ✅
-                        </div>
-
-                        <h3>
-                            Task Management System
-                        </h3>
-
-                        <p class="project-subtitle">
-                            Task Management Application
-                        </p>
-
-                        <p>
-                            A university group project focused on creating
-                            a system for managing and organizing tasks
-                            through a simple application interface.
-                        </p>
-
-                        <div class="project-tech">
-                            <span>Application Development</span>
-                            <span>Teamwork</span>
-                        </div>
-
-                    </article>
-
-
-                    <!-- Salon Nilu -->
-
-                    <article class="project-card">
-
-                        <div class="project-top">
-                            <span class="project-type">
-                                Group Project
-                            </span>
-                        </div>
-
-                        <div class="project-icon">
-                            💇‍♀️
-                        </div>
-
-                        <h3>
-                            Salon Nilu
-                        </h3>
-
-                        <p class="project-subtitle">
-                            Salon Management Web Application
-                        </p>
-
-                        <p>
-                            A collaborative university project designed
-                            around a salon-related web application and
-                            developed as part of a team.
-                        </p>
-
-                        <div class="project-tech">
-                            <span>Web Development</span>
-                            <span>Teamwork</span>
-                        </div>
-
-                    </article>
-
-                </div>
-
-            </div>
-
-        </section>
-
-
-        <!-- ================= EDUCATION ================= -->
-
-        <section class="section education-section" id="education">
-
-            <div class="section-container">
-
-                <div class="section-heading">
-                    <p class="section-label">EDUCATION</p>
-
-                    <h2>
-                        My <span>Education</span>
-                    </h2>
-                </div>
-
-                <div class="education-card">
-
-                    <div class="education-icon">
-                        🎓
-                    </div>
-
-                    <div class="education-content">
-
-                        <p class="education-year">
-                            Undergraduate
-                        </p>
-
-                        <h3>
-                            BSc (Hons) in Computer Science
-                        </h3>
-
-                        <h4>
-                            NSBM Green University
-                        </h4>
-
-                        <p>
-                            Currently pursuing my undergraduate degree in
-                            Computer Science, developing knowledge in
-                            programming, databases, web development,
-                            software engineering, and computer science
-                            fundamentals.
-                        </p>
-
-                    </div>
-
-                </div>
-
-            </div>
-
-        </section>
-
-
-        <!-- ================= CONTACT ================= -->
-
-        <section class="section contact-section" id="contact">
-
-            <div class="section-container">
-
-                <div class="contact-box">
-
-                    <div class="contact-content">
-
-                        <p class="section-label">
-                            GET IN TOUCH
-                        </p>
-
-                        <h2>
-                            Let's connect & <span>build something.</span>
-                        </h2>
-
-                        <p>
-                            I am open to internship opportunities, learning
-                            experiences, and connecting with people in the
-                            technology industry.
-                        </p>
-
-                        <div class="contact-buttons">
-
-                            <a
-                                href="mailto:ishiishi0307@gmail.com"
-                                class="btn primary-btn"
-                            >
-                                📧 Email Me
-                            </a>
-
-                            <a
-                                href="https://www.linkedin.com/in/chamishka-ishani-8003603a5"
-                                target="_blank"
-                                class="btn secondary-btn"
-                            >
-                                LinkedIn
-                            </a>
-
-                        </div>
-
-                    </div>
-
-                </div>
-
-            </div>
-
-        </section>
-
-    </main>
-
-
-    <!-- ================= FOOTER ================= -->
-
-    <footer class="footer">
 
         <p>
-            © 2026 Chamishka Ishani. All Rights Reserved.
+            © <span id="year"></span> Chamishka Ishani. All rights reserved.
         </p>
 
-        <p>
-            Built with 💗 and code.
-        </p>
+    </div>
 
-    </footer>
+</footer>
 
 
-    <script src="script.js"></script>
+<script src="script.js"></script>
 
 </body>
 </html>
