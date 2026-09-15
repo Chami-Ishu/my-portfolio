@@ -1,49 +1,65 @@
-// =========================
-// MOBILE MENU
-// =========================
+/* =====================================================
+   MOBILE NAVIGATION
+===================================================== */
 
 const menuBtn = document.getElementById("menuBtn");
-const navLinks = document.querySelector(".nav-links");
+const navLinks = document.getElementById("navLinks");
 
-if (menuBtn && navLinks) {
+menuBtn.addEventListener("click", () => {
+    navLinks.classList.toggle("active");
+});
 
-    menuBtn.addEventListener("click", () => {
-        navLinks.classList.toggle("active");
 
-        if (navLinks.classList.contains("active")) {
-            menuBtn.textContent = "✕";
-        } else {
-            menuBtn.textContent = "☰";
-        }
+/* Close menu when clicking a navigation link */
+
+document.querySelectorAll(".nav-links a").forEach((link) => {
+
+    link.addEventListener("click", () => {
+        navLinks.classList.remove("active");
     });
 
-
-    // Close mobile menu after clicking a link
-
-    const navItems = document.querySelectorAll(".nav-links a");
-
-    navItems.forEach((item) => {
-
-        item.addEventListener("click", () => {
-
-            navLinks.classList.remove("active");
-
-            menuBtn.textContent = "☰";
-
-        });
-
-    });
-
-}
+});
 
 
-// =========================
-// SCROLL ANIMATION
-// =========================
+/* =====================================================
+   PROFILE IMAGE FALLBACK
+===================================================== */
 
-const animatedElements = document.querySelectorAll(
-    ".section-heading, .about-content, .skill-card, .project-card, .education-card, .contact-box"
-);
+const profileImage = document.getElementById("profileImage");
+const profilePlaceholder = document.getElementById("profilePlaceholder");
+
+
+/*
+   If profile.jpg exists,
+   hide the CI placeholder.
+*/
+
+profileImage.addEventListener("load", () => {
+
+    profilePlaceholder.style.display = "none";
+
+});
+
+
+/*
+   If profile.jpg doesn't exist,
+   show the CI placeholder instead.
+*/
+
+profileImage.addEventListener("error", () => {
+
+    profileImage.style.display = "none";
+
+    profilePlaceholder.style.display = "flex";
+
+});
+
+
+/* =====================================================
+   SCROLL REVEAL
+===================================================== */
+
+const revealElements = document.querySelectorAll(".reveal");
 
 const observer = new IntersectionObserver(
     (entries) => {
@@ -52,8 +68,7 @@ const observer = new IntersectionObserver(
 
             if (entry.isIntersecting) {
 
-                entry.target.style.opacity = "1";
-                entry.target.style.transform = "translateY(0)";
+                entry.target.classList.add("show");
 
                 observer.unobserve(entry.target);
 
@@ -68,28 +83,16 @@ const observer = new IntersectionObserver(
 );
 
 
-animatedElements.forEach((element) => {
-
-    element.style.opacity = "0";
-    element.style.transform = "translateY(25px)";
-    element.style.transition = "opacity 0.7s ease, transform 0.7s ease";
+revealElements.forEach((element) => {
 
     observer.observe(element);
 
 });
 
 
-// =========================
-// CURRENT YEAR
-// =========================
+/* =====================================================
+   FOOTER YEAR
+===================================================== */
 
-const footerText = document.querySelector(".footer p");
-
-if (footerText) {
-
-    const currentYear = new Date().getFullYear();
-
-    footerText.innerHTML =
-        `© ${currentYear} Chamishka Ishani. All Rights Reserved.`;
-
-}
+document.getElementById("year").textContent =
+    new Date().getFullYear();
