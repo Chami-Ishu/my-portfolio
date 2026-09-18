@@ -1,70 +1,36 @@
-/* =====================================================
-   MOBILE NAVIGATION
-===================================================== */
+/* ================= MOBILE MENU ================= */
 
 const menuBtn = document.getElementById("menuBtn");
-const navLinks = document.getElementById("navLinks");
+const navMenu = document.getElementById("navMenu");
 
 menuBtn.addEventListener("click", () => {
-    navLinks.classList.toggle("active");
+
+    navMenu.classList.toggle("open");
+
 });
 
 
-/* Close menu when clicking a navigation link */
+/* Close menu after clicking a navigation link */
 
-document.querySelectorAll(".nav-links a").forEach((link) => {
+navMenu.querySelectorAll("a").forEach(link => {
 
     link.addEventListener("click", () => {
-        navLinks.classList.remove("active");
+
+        navMenu.classList.remove("open");
+
     });
 
 });
 
 
-/* =====================================================
-   PROFILE IMAGE FALLBACK
-===================================================== */
+/* ================= SCROLL REVEAL ================= */
 
-const profileImage = document.getElementById("profileImage");
-const profilePlaceholder = document.getElementById("profilePlaceholder");
-
-
-/*
-   If profile.jpg exists,
-   hide the CI placeholder.
-*/
-
-profileImage.addEventListener("load", () => {
-
-    profilePlaceholder.style.display = "none";
-
-});
-
-
-/*
-   If profile.jpg doesn't exist,
-   show the CI placeholder instead.
-*/
-
-profileImage.addEventListener("error", () => {
-
-    profileImage.style.display = "none";
-
-    profilePlaceholder.style.display = "flex";
-
-});
-
-
-/* =====================================================
-   SCROLL REVEAL
-===================================================== */
-
-const revealElements = document.querySelectorAll(".reveal");
+const revealItems = document.querySelectorAll(".reveal");
 
 const observer = new IntersectionObserver(
     (entries) => {
 
-        entries.forEach((entry) => {
+        entries.forEach(entry => {
 
             if (entry.isIntersecting) {
 
@@ -83,16 +49,14 @@ const observer = new IntersectionObserver(
 );
 
 
-revealElements.forEach((element) => {
+revealItems.forEach(item => {
 
-    observer.observe(element);
+    observer.observe(item);
 
 });
 
 
-/* =====================================================
-   FOOTER YEAR
-===================================================== */
+/* ================= FOOTER YEAR ================= */
 
 document.getElementById("year").textContent =
     new Date().getFullYear();
