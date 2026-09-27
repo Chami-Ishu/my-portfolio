@@ -16,6 +16,8 @@
           rel="stylesheet">
 
     <link rel="stylesheet" href="style.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
 </head>
 
 <body>
@@ -115,7 +117,7 @@
         <div class="profile-ring">
 
             <div class="profile-placeholder">
-                CI
+                <img src="assets/profile.jpeg" alt="Profile Image">
             </div>
 
         </div>
@@ -133,6 +135,15 @@
         </div>
 
     </div>
+
+    <div class="about-animation">
+    <div class="rotating-word">
+        <span>Web Development</span>
+        <span>JavaScript</span>
+        <span>React</span>
+        <span>Creative Technology</span>
+    </div>
+</div>
 
 </section>
 
@@ -310,231 +321,232 @@
 
 
 <!-- ================= PROJECTS ================= -->
-
-<section id="projects" class="section reveal">
-
-    <div class="section-heading">
-
-        <p class="eyebrow">
-            MY WORK
-        </p>
-
-        <h2>
-            Featured Projects
-        </h2>
-
-        <p>
-            Projects that demonstrate my learning, development skills and teamwork.
-        </p>
-
+<section id="projects" class="projects-section">
+    <div class="section-title">
+        <span>MY WORK</span>
+        <h2>Featured Projects</h2>
+        <p>Some of the projects I've worked on during my journey.</p>
     </div>
-
 
     <div class="projects-grid">
 
+        <!-- TinyBlooms -->
+        <div class="project-card featured-project">
 
-        <!-- TINYBLOOMS -->
+            <div class="project-icon">
+                <i class="fa-solid fa-seedling"></i>
+            </div>
 
-        <article class="project-card featured">
+            <div class="project-content">
+                <span class="project-type">Individual Project</span>
 
-            <div class="project-top">
+                <h3>TinyBlooms</h3>
 
-                <span class="project-label">
-                    INDIVIDUAL PROJECT
-                </span>
+                <p>
+                    A cute and modern flower bouquet ordering web application
+                    built with React, Spring Boot and MySQL.
+                </p>
+
+                <div class="project-tech">
+                    <span>React</span>
+                    <span>Spring Boot</span>
+                    <span>MySQL</span>
+                    <span>REST API</span>
+                </div>
 
                 <a href="https://github.com/Chami-Ishu/TinyBlooms"
                    target="_blank"
-                   rel="noopener">
-                    GitHub ↗
+                   class="project-link">
+                    View Project <i class="fa-solid fa-arrow-up-right-from-square"></i>
                 </a>
+            </div>
+        </div>
 
+
+        <!-- TalentFlow -->
+        <div class="project-card">
+
+            <div class="project-icon">
+                <i class="fa-solid fa-users"></i>
             </div>
 
+            <div class="project-content">
+                <span class="project-type">Group Project</span>
 
-            <h3>
-                TinyBlooms
-            </h3>
+                <h3>TalentFlow</h3>
+
+                <p>
+                    A web-based platform designed to manage talent,
+                    opportunities and interactions in an organized way.
+                </p>
+
+                <div class="project-tech">
+                    <span>HTML</span>
+                    <span>CSS</span>
+                    <span>JavaScript</span>
+                </div>
+
+                <a href="#" class="project-link">
+                    View Project <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                </a>
+            </div>
+        </div>
 
 
-            <p>
-                A full-stack flower bouquet e-commerce website developed
-                independently for a real business idea. Customers can browse
-                bouquets, manage a cart, place orders and track them using
-                an Order ID. An admin dashboard supports order viewing,
-                summaries and status updates.
-            </p>
+        <!-- Task Management -->
+        <div class="project-card">
 
-
-            <div class="tags">
-
-                <span>React</span>
-                <span>JavaScript</span>
-                <span>Spring Boot</span>
-                <span>Java</span>
-                <span>MySQL</span>
-                <span>REST API</span>
-
+            <div class="project-icon">
+                <i class="fa-solid fa-list-check"></i>
             </div>
 
-        </article>
+            <div class="project-content">
+                <span class="project-type">Group Project</span>
+
+                <h3>Task Management System</h3>
+
+                <p>
+                    A system created to organize tasks, track progress
+                    and improve team productivity.
+                </p>
+
+                <div class="project-tech">
+                    <span>Java</span>
+                    <span>OOP</span>
+                    <span>MySQL</span>
+                </div>
+
+                <a href="#" class="project-link">
+                    View Project <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                </a>
+            </div>
+        </div>
 
 
-        <!-- TALENTFLOW -->
+        <!-- Salon Nilu -->
+        <div class="project-card">
 
-        <article class="project-card">
-
-            <div class="project-top">
-
-                <span class="project-label">
-                    GROUP PROJECT
-                </span>
-
+            <div class="project-icon">
+                <i class="fa-solid fa-scissors"></i>
             </div>
 
-            <h3>
-                TalentFlow
-            </h3>
+            <div class="project-content">
+                <span class="project-type">Group Project</span>
 
-            <p>
-                A university group project focused on building a practical
-                application as part of the software development learning process.
-            </p>
+                <h3>Salon Nilu</h3>
 
-            <div class="tags">
+                <p>
+                    A salon management and service-based web application
+                    designed to provide a simple user experience.
+                </p>
 
-                <span>Group Work</span>
-                <span>Software Development</span>
+                <div class="project-tech">
+                    <span>HTML</span>
+                    <span>CSS</span>
+                    <span>JavaScript</span>
+                </div>
 
+                <a href="#" class="project-link">
+                    View Project <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                </a>
             </div>
-
-        </article>
-
-
-        <!-- TASK MANAGEMENT -->
-
-        <article class="project-card">
-
-            <div class="project-top">
-
-                <span class="project-label">
-                    GROUP PROJECT
-                </span>
-
-            </div>
-
-            <h3>
-                Task Management System
-            </h3>
-
-            <p>
-                A group project designed around organizing and managing tasks
-                through a structured application workflow.
-            </p>
-
-            <div class="tags">
-
-                <span>Group Work</span>
-                <span>Application Development</span>
-
-            </div>
-
-        </article>
-
-
-        <!-- SALON NILU -->
-
-        <article class="project-card">
-
-            <div class="project-top">
-
-                <span class="project-label">
-                    GROUP PROJECT
-                </span>
-
-            </div>
-
-            <h3>
-                Salon Nilu
-            </h3>
-
-            <p>
-                A university group project created around a salon-related
-                application concept and user-focused functionality.
-            </p>
-
-            <div class="tags">
-
-                <span>Group Work</span>
-                <span>Web Development</span>
-
-            </div>
-
-        </article>
+        </div>
 
     </div>
-
 </section>
 
 
-<!-- ================= EDUCATION ================= -->
-
-<section id="education" class="section alt reveal">
+<!-- EDUCATION SECTION -->
+<section id="education" class="section education-section">
 
     <div class="section-heading">
-
-        <p class="eyebrow">
-            ACADEMIC JOURNEY
-        </p>
-
-        <h2>
-            Education
-        </h2>
-
+        <span class="eyebrow">My Journey</span>
+        <h2>Education</h2>
+        <p>My academic journey and educational background.</p>
     </div>
 
+    <div class="education-timeline">
 
-    <div class="education-list">
+        <!-- NSBM -->
+        <div class="education-item current-education">
 
-        <div class="education-item">
+            <div class="education-icon">
+                <i class="fa-solid fa-graduation-cap"></i>
+            </div>
 
-            <span class="edu-year">
-                2025 – 2028
-            </span>
+            <div class="education-card">
 
-            <div>
+                <span class="education-year">
+                    2024 – Present
+                </span>
 
-                <h3>
-                    BSc (Hons) in Computer Science
-                </h3>
+                <h3>BSc (Hons) in Computer Science</h3>
+
+                <h4>NSBM Green University</h4>
 
                 <p>
-                    NSBM Green University
+                    Currently pursuing my Bachelor's degree in Computer Science,
+                    developing knowledge in software development, web technologies,
+                    databases and programming.
                 </p>
-
-                <small>
-                    Currently in 3rd Year, 1st Semester
-                </small>
 
             </div>
 
         </div>
 
 
+        <!-- A/L -->
         <div class="education-item">
 
-            <span class="edu-year">
-                Completed 2024
-            </span>
+            <div class="education-icon">
+                <i class="fa-solid fa-book-open"></i>
+            </div>
 
-            <div>
+            <div class="education-card">
 
-                <h3>
-                    Diploma in Information Technology
-                </h3>
+                <span class="education-year">
+                    2020 – 2022
+                </span>
+
+                <h3>G.C.E. Advanced Level</h3>
+
+                <h4>Mahinda Rajapaksha College, Homagama</h4>
+
+                <p class="education-stream">
+                    Mathematics Stream
+                </p>
+
+                <div class="education-subjects">
+                    <span>Combined Mathematics</span>
+                    <span>Physics</span>
+                    <span>ICT</span>
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <!-- O/L -->
+        <div class="education-item">
+
+            <div class="education-icon">
+                <i class="fa-solid fa-school"></i>
+            </div>
+
+            <div class="education-card">
+
+                <span class="education-year">
+                    2015 – 2019
+                </span>
+
+                <h3>Secondary Education</h3>
+
+                <h4>Mahinda Rajapaksha College, Homagama</h4>
 
                 <p>
-                    Horizon College of Business & Technology
+                    Completed my secondary education with a strong foundation
+                    for my higher studies and future career in technology.
                 </p>
 
             </div>
@@ -544,7 +556,6 @@
     </div>
 
 </section>
-
 
 <!-- ================= CURRENTLY LEARNING ================= -->
 
