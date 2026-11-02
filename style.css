@@ -60,7 +60,6 @@ a {
     font-weight: 800;
     letter-spacing: -1px;
     color: #f4ebe5;
-
     transition: 0.3s ease;
 }
 
@@ -102,14 +101,10 @@ a {
 
 .hero {
     min-height: calc(100vh - 74px);
-
     padding: 90px 7%;
-
     display: grid;
     grid-template-columns: 1.1fr 0.9fr;
-
     align-items: center;
-
     gap: 60px;
 
     background:
@@ -140,35 +135,24 @@ a {
 
 .hero-name {
     font-family: "Playfair Display", serif;
-
     font-size: clamp(48px, 7vw, 78px);
-
     line-height: 1.05;
-
     letter-spacing: -2px;
-
     color: #f5ede8;
-
     animation: nameUp 1s 0.12s ease both;
 }
 
 .hero-title {
     font-size: 24px;
-
     margin: 20px 0 16px;
-
     color: #c49a4a;
-
     animation: fadeUp 1s 0.25s ease both;
 }
 
 .hero-text {
     max-width: 650px;
-
     color: #a99a92;
-
     font-size: 16px;
-
     animation: fadeUp 1s 0.4s ease both;
 }
 
@@ -178,64 +162,44 @@ a {
 .hero-actions {
     display: flex;
     flex-wrap: wrap;
-
     gap: 12px;
-
     margin-top: 30px;
-
     animation: fadeUp 1s 0.52s ease both;
 }
 
 .btn {
     display: inline-flex;
-
     align-items: center;
     justify-content: center;
-
     padding: 12px 20px;
-
     border-radius: 10px;
-
     font-weight: 700;
-
     font-size: 14px;
-
     transition: 0.25s;
 }
 
 .btn.primary {
     background: #eee3dc;
-
     color: #211917;
-
-    box-shadow:
-        0 10px 30px rgba(0, 0, 0, 0.25);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.25);
 }
 
 .btn.primary:hover {
     background: #cf7e8c;
-
     color: #ffffff;
-
     transform: translateY(-3px);
-
-    box-shadow:
-        0 12px 30px rgba(196, 122, 136, 0.18);
+    box-shadow: 0 12px 30px rgba(196, 122, 136, 0.18);
 }
 
 .btn.secondary {
     border: 1px solid #493831;
-
     background: #1d1816;
-
     color: #dfd2cb;
 }
 
 .btn.secondary:hover {
     border-color: #c49a4a;
-
     color: #d6b56a;
-
     transform: translateY(-3px);
 }
 
@@ -244,17 +208,11 @@ a {
 
 .social-links {
     display: flex;
-
     gap: 20px;
-
     margin-top: 20px;
-
     color: #a9978e;
-
     font-size: 14px;
-
     font-weight: 700;
-
     animation: fadeUp 1s 0.65s ease both;
 }
 
@@ -271,24 +229,17 @@ a {
 
 .hero-visual {
     display: flex;
-
     flex-direction: column;
-
     align-items: center;
-
     justify-content: center;
-
     position: relative;
-
     animation: visualIn 1s 0.25s ease both;
 }
 
 .profile-ring {
     width: min(330px, 70vw);
     height: min(330px, 70vw);
-
     border-radius: 50%;
-
     padding: 9px;
 
     background: linear-gradient(
@@ -345,15 +296,12 @@ a {
     position: absolute;
     left: 0;
     top: 0;
-
     color: #c49a4a;
     font-size: 20px;
     font-weight: 700;
     white-space: nowrap;
-
     opacity: 0;
     transform: translateX(-35px);
-
     animation: slideWord 10s infinite;
 }
 
@@ -404,30 +352,22 @@ a {
     }
 }
 
+
 /* ================= CODE CARD ================= */
 
 .code-card {
     display: flex;
-
     align-items: center;
-
     gap: 15px;
-
     margin-top: -25px;
-
     margin-right: -80px;
-
     background: #211b19;
-
     padding: 18px 24px;
-
     border-radius: 14px;
 
-    box-shadow:
-        0 15px 45px rgba(0, 0, 0, 0.35);
+    box-shadow: 0 15px 45px rgba(0, 0, 0, 0.35);
 
     border: 1px solid #3b2d28;
-
     transition: 0.3s ease;
 }
 
@@ -441,25 +381,19 @@ a {
 
 .code-card > span {
     font-size: 28px;
-
     color: #c47a88;
-
     font-weight: 800;
 }
 
 .code-card strong {
     display: block;
-
     font-size: 14px;
-
     color: #eee4de;
 }
 
 .code-card small {
     display: block;
-
     color: #95847c;
-
     font-size: 12px;
 }
 
@@ -468,7 +402,6 @@ a {
 
 .section {
     padding: 100px 7%;
-
     background: #171312;
 }
 
@@ -478,31 +411,22 @@ a {
 
 .section-heading {
     max-width: 760px;
-
     margin-bottom: 45px;
 }
 
 .eyebrow {
     font-size: 12px;
-
     letter-spacing: 2px;
-
     font-weight: 800;
-
     color: #c47a88;
-
     margin-bottom: 8px;
 }
 
 .section h2 {
     font-family: "Playfair Display", serif;
-
     font-size: 44px;
-
     line-height: 1.15;
-
     margin-bottom: 14px;
-
     color: #f0e6e0;
 }
 
@@ -510,18 +434,11 @@ a {
     color: #9d8d85;
 }
 
-
-/* Small premium accent for section headings */
-
 .section-heading::after {
     content: "";
-
     display: block;
-
     width: 38px;
-
     height: 2px;
-
     margin-top: 20px;
 
     background: linear-gradient(
@@ -542,9 +459,7 @@ a {
 
 .about-grid {
     display: grid;
-
     grid-template-columns: 1.4fr 0.8fr;
-
     gap: 55px;
 }
 
@@ -565,28 +480,22 @@ a {
 
 .info-card {
     padding: 28px;
-
     background: #211b19;
-
     border: 1px solid #3b2d28;
-
     border-radius: 16px;
 
-    box-shadow:
-        0 12px 35px rgba(0, 0, 0, 0.20);
+    box-shadow: 0 12px 35px rgba(0, 0, 0, 0.20);
 
     transition: 0.3s ease;
 }
 
 .info-card:hover {
     border-color: #5b4930;
-
     transform: translateY(-3px);
 }
 
 .info-card div {
     padding: 14px 0;
-
     border-bottom: 1px solid #362925;
 }
 
@@ -596,15 +505,12 @@ a {
 
 .info-card span {
     display: block;
-
     font-size: 12px;
-
     color: #87766e;
 }
 
 .info-card strong {
     font-size: 14px;
-
     color: #e5d9d2;
 }
 
@@ -613,27 +519,20 @@ a {
 
 .skill-groups {
     display: grid;
-
     grid-template-columns: repeat(2, 1fr);
-
     gap: 20px;
 }
 
 .skill-group {
     background: #211b19;
-
     padding: 28px;
-
     border: 1px solid #3b2d28;
-
     border-radius: 16px;
-
     transition: 0.3s;
 }
 
 .skill-group:hover {
     transform: translateY(-4px);
-
     border-color: #705342;
 
     box-shadow:
@@ -643,17 +542,13 @@ a {
 
 .skill-group h3 {
     margin-bottom: 17px;
-
     font-size: 18px;
-
     color: #eee4de;
 }
 
 .skill-list {
     display: flex;
-
     flex-wrap: wrap;
-
     gap: 9px;
 }
 
@@ -661,19 +556,12 @@ a {
 .tags span,
 .learning-pills span {
     padding: 7px 11px;
-
     background: #352327;
-
     color: #d6949f;
-
     border: 1px solid #503239;
-
     border-radius: 999px;
-
     font-size: 12px;
-
     font-weight: 700;
-
     transition: 0.25s ease;
 }
 
@@ -681,9 +569,7 @@ a {
 .tags span:hover,
 .learning-pills span:hover {
     border-color: #80643b;
-
     color: #d6b56a;
-
     background: #302326;
 }
 
@@ -692,9 +578,7 @@ a {
 
 .projects-section {
     padding: 100px 8%;
-
     background: #100d0e;
-
     position: relative;
 }
 
@@ -703,33 +587,25 @@ a {
 
 .projects-section .section-title {
     text-align: center;
-
     margin-bottom: 55px;
 }
 
 .projects-section .section-title span {
     color: #d98b9c;
-
     font-size: 13px;
-
     font-weight: 600;
-
     letter-spacing: 4px;
 }
 
 .projects-section .section-title h2 {
     margin: 10px 0;
-
     font-size: 42px;
-
     color: #f5e9eb;
-
     font-weight: 700;
 }
 
 .projects-section .section-title p {
     color: #a99b9f;
-
     font-size: 15px;
 }
 
@@ -738,13 +614,9 @@ a {
 
 .projects-section .section-title::after {
     content: "";
-
     display: block;
-
     width: 42px;
-
     height: 2px;
-
     margin: 20px auto 0;
 
     background: linear-gradient(
@@ -761,13 +633,9 @@ a {
 
 .projects-grid {
     max-width: 1200px;
-
     margin: auto;
-
     display: grid;
-
     grid-template-columns: repeat(2, 1fr);
-
     gap: 28px;
 }
 
@@ -777,25 +645,18 @@ a {
 .project-card {
     position: relative;
 
-    background:
-        linear-gradient(
-            145deg,
-            #1c1618,
-            #151112
-        );
+    background: linear-gradient(
+        145deg,
+        #1c1618,
+        #151112
+    );
 
     border: 1px solid #302629;
-
     border-radius: 20px;
-
     padding: 30px;
-
     display: flex;
-
     gap: 22px;
-
     transition: all 0.35s ease;
-
     overflow: hidden;
 }
 
@@ -804,38 +665,25 @@ a {
 
 .project-card::before {
     content: "";
-
     position: absolute;
-
     width: 150px;
-
     height: 150px;
-
     background: #a85c70;
-
     opacity: 0.05;
-
     border-radius: 50%;
-
     top: -70px;
-
     right: -60px;
-
     transition: 0.4s;
 }
 
 .project-card:hover {
     transform: translateY(-8px);
-
     border-color: #8e5362;
-
-    box-shadow:
-        0 15px 40px rgba(0, 0, 0, 0.35);
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.35);
 }
 
 .project-card:hover::before {
     transform: scale(1.5);
-
     opacity: 0.09;
 }
 
@@ -844,42 +692,23 @@ a {
 
 .project-icon {
     min-width: 52px;
-
     width: 52px;
-
     height: 52px;
-
     display: flex;
-
     align-items: center;
-
     justify-content: center;
-
     border-radius: 14px;
-
     background: #241a1d;
-
     color: #c77a8b;
-
     font-size: 20px;
-
     border: 1px solid #3a292e;
-
     transition: all 0.3s ease;
 }
 
 .project-card:hover .project-icon {
     background: #352127;
-
     color: #e49aaa;
-
     transform: rotate(-5deg) scale(1.05);
-}
-
-
-/* Subtle gold hover detail */
-
-.project-card:hover .project-icon {
     border-color: #715c36;
 }
 
@@ -889,27 +718,19 @@ a {
 .featured-project {
     border-color: #704653;
 
-    background:
-        linear-gradient(
-            145deg,
-            #211619,
-            #151112
-        );
+    background: linear-gradient(
+        145deg,
+        #211619,
+        #151112
+    );
 }
-
-
-/* TinyBlooms premium accent */
 
 .featured-project::after {
     content: "";
-
     position: absolute;
-
     top: 0;
     left: 30px;
-
     width: 45px;
-
     height: 2px;
 
     background: linear-gradient(
@@ -923,17 +744,11 @@ a {
 
 .featured-project .project-icon {
     width: 58px;
-
     min-width: 58px;
-
     height: 58px;
-
     background: #352027;
-
     color: #e49aaa;
-
     border-color: #704653;
-
     font-size: 22px;
 }
 
@@ -950,9 +765,7 @@ a {
 
 .project-content {
     flex: 1;
-
     position: relative;
-
     z-index: 1;
 }
 
@@ -961,20 +774,12 @@ a {
 
 .project-type {
     display: inline-block;
-
     color: #9c858a;
-
     font-size: 11px;
-
     text-transform: uppercase;
-
     letter-spacing: 1.5px;
-
     margin-bottom: 8px;
 }
-
-
-/* Featured project type */
 
 .featured-project .project-type {
     color: #b99b60;
@@ -985,11 +790,8 @@ a {
 
 .project-content h3 {
     color: #f3e7e9;
-
     font-size: 22px;
-
     margin: 0 0 12px;
-
     font-weight: 600;
 }
 
@@ -998,11 +800,8 @@ a {
 
 .project-content p {
     color: #a99b9f;
-
     font-size: 14px;
-
     line-height: 1.7;
-
     margin-bottom: 18px;
 }
 
@@ -1011,33 +810,23 @@ a {
 
 .project-tech {
     display: flex;
-
     flex-wrap: wrap;
-
     gap: 8px;
-
     margin-bottom: 20px;
 }
 
 .project-tech span {
     padding: 6px 11px;
-
     border-radius: 20px;
-
     background: #21191b;
-
     border: 1px solid #34282b;
-
     color: #bdaeb2;
-
     font-size: 11px;
-
     transition: 0.25s ease;
 }
 
 .project-tech span:hover {
     border-color: #705936;
-
     color: #d1b36e;
 }
 
@@ -1046,26 +835,32 @@ a {
 
 .project-link {
     display: inline-flex;
-
     align-items: center;
-
     gap: 8px;
-
     color: #d58a9b;
-
     text-decoration: none;
-
     font-size: 13px;
-
     font-weight: 600;
-
     transition: 0.3s;
 }
 
 .project-link:hover {
     color: #f0a6b6;
-
     gap: 12px;
+}
+
+
+/* StudyMate and multiple project links */
+
+.project-links {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 22px;
+}
+
+.project-links .project-link {
+    margin-top: 0;
 }
 
 
@@ -1077,77 +872,13 @@ a {
     position: relative;
 }
 
-.project-card {
-    background: #fff;
-    padding: 25px;
-    border-radius: 15px;
-    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
-    transition: 0.3s ease;
-}
-
-.project-card:hover {
-    transform: translateY(-7px);
-}
-
-.project-icon {
-    font-size: 35px;
-    margin-bottom: 15px;
-}
-
-.project-card h3 {
-    margin-bottom: 12px;
-}
-
-.project-card p {
-    line-height: 1.6;
-    margin-bottom: 18px;
-}
-
-.project-tech {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 8px;
-    margin-bottom: 20px;
-}
-
-.project-tech span {
-    background: #eee8ff;
-    color: #7048b8;
-    padding: 6px 12px;
-    border-radius: 20px;
-    font-size: 12px;
-}
-
-.project-buttons {
-    display: flex;
-    gap: 10px;
-    flex-wrap: wrap;
-}
-
-.project-btn {
-    display: inline-block;
-    padding: 9px 16px;
-    background: #7952b3;
-    color: white;
-    text-decoration: none;
-    border-radius: 8px;
-    font-size: 14px;
-    transition: 0.3s;
-}
-
-.project-btn:hover {
-    background: #5e3b91;
-}
 
 /* EDUCATION TIMELINE */
 
 .education-timeline {
     position: relative;
-
     max-width: 950px;
-
     margin: 70px auto 0;
-
     padding: 10px 0 30px;
 }
 
@@ -1156,15 +887,10 @@ a {
 
 .education-timeline::before {
     content: "";
-
     position: absolute;
-
     top: 0;
-
     bottom: 0;
-
     left: 32px;
-
     width: 2px;
 
     background: linear-gradient(
@@ -1185,15 +911,10 @@ a {
 
 .education-item {
     position: relative;
-
     display: flex;
-
     align-items: flex-start;
-
     gap: 32px;
-
     margin-bottom: 55px;
-
     z-index: 1;
 }
 
@@ -1206,27 +927,16 @@ a {
 
 .education-icon {
     position: relative;
-
     flex: 0 0 66px;
-
     width: 66px;
-
     height: 66px;
-
     display: flex;
-
     align-items: center;
-
     justify-content: center;
-
     border-radius: 50%;
-
     background: #1c1716;
-
     border: 2px solid #8f626b;
-
     color: #d99aaa;
-
     font-size: 22px;
 
     box-shadow:
@@ -1234,7 +944,6 @@ a {
         0 0 20px rgba(196, 122, 136, 0.10);
 
     z-index: 3;
-
     transition: 0.3s ease;
 }
 
@@ -1243,7 +952,6 @@ a {
 
 .education-item:hover .education-icon {
     border-color: #c49a4a;
-
     color: #d6b56a;
 
     box-shadow:
@@ -1256,7 +964,6 @@ a {
 
 .current-education .education-icon {
     border-color: #c49a4a;
-
     color: #d6b56a;
 
     box-shadow:
@@ -1269,24 +976,19 @@ a {
 
 .education-card {
     position: relative;
-
     flex: 1;
-
     padding: 30px 34px;
 
-    background:
-        linear-gradient(
-            145deg,
-            rgba(49, 37, 34, 0.96),
-            rgba(28, 23, 22, 0.98)
-        );
+    background: linear-gradient(
+        145deg,
+        rgba(49, 37, 34, 0.96),
+        rgba(28, 23, 22, 0.98)
+    );
 
     border: 1px solid rgba(156, 99, 114, 0.22);
-
     border-radius: 18px;
 
-    box-shadow:
-        0 15px 35px rgba(0, 0, 0, 0.22);
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.22);
 
     transition:
         transform 0.3s ease,
@@ -1299,24 +1001,14 @@ a {
 
 .education-card::before {
     content: "";
-
     position: absolute;
-
     left: -34px;
-
     top: 31px;
-
     width: 34px;
-
     height: 2px;
-
     background: #9c6372;
-
     transition: 0.3s ease;
 }
-
-
-/* Connector gold on hover */
 
 .education-item:hover .education-card::before {
     background: #c49a4a;
@@ -1327,7 +1019,6 @@ a {
 
 .education-card:hover {
     transform: translateY(-5px);
-
     border-color: rgba(196, 154, 74, 0.38);
 
     box-shadow:
@@ -1341,12 +1032,11 @@ a {
 .current-education .education-card {
     border-color: rgba(196, 154, 74, 0.30);
 
-    background:
-        linear-gradient(
-            145deg,
-            rgba(51, 39, 35, 0.98),
-            rgba(28, 23, 22, 0.98)
-        );
+    background: linear-gradient(
+        145deg,
+        rgba(51, 39, 35, 0.98),
+        rgba(28, 23, 22, 0.98)
+    );
 }
 
 
@@ -1354,15 +1044,10 @@ a {
 
 .current-education .education-card::after {
     content: "";
-
     position: absolute;
-
     top: 0;
-
     left: 28px;
-
     width: 42px;
-
     height: 2px;
 
     background: linear-gradient(
@@ -1379,36 +1064,21 @@ a {
 
 .education-year {
     display: inline-block;
-
     margin-bottom: 12px;
-
     padding: 6px 13px;
-
     border-radius: 20px;
-
     background: rgba(156, 99, 114, 0.12);
-
     border: 1px solid rgba(196, 123, 142, 0.20);
-
     color: #d99aaa;
-
     font-size: 0.78rem;
-
     font-weight: 600;
-
     letter-spacing: 0.5px;
-
     transition: 0.25s ease;
 }
 
-
-/* Gold year accent on hover */
-
 .education-card:hover .education-year {
     border-color: rgba(196, 154, 74, 0.30);
-
     color: #d6b56a;
-
     background: rgba(196, 154, 74, 0.07);
 }
 
@@ -1417,11 +1087,8 @@ a {
 
 .education-card h3 {
     margin-bottom: 7px;
-
     color: #f1e8e3;
-
     font-size: 1.35rem;
-
     font-weight: 700;
 }
 
@@ -1430,11 +1097,8 @@ a {
 
 .education-card h4 {
     margin-bottom: 16px;
-
     color: #c998a5;
-
     font-size: 0.98rem;
-
     font-weight: 500;
 }
 
@@ -1443,11 +1107,8 @@ a {
 
 .education-card p {
     margin: 0;
-
     color: #b8aaa4;
-
     font-size: 0.93rem;
-
     line-height: 1.75;
 }
 
@@ -1456,11 +1117,8 @@ a {
 
 .education-stream {
     margin-top: 5px !important;
-
     margin-bottom: 17px !important;
-
     color: #d7b0ba !important;
-
     font-weight: 600;
 }
 
@@ -1469,35 +1127,24 @@ a {
 
 .education-subjects {
     display: flex;
-
     flex-wrap: wrap;
-
     gap: 9px;
 }
 
 .education-subjects span {
     padding: 7px 12px;
-
     border-radius: 20px;
-
     background: rgba(196, 123, 142, 0.07);
-
     border: 1px solid rgba(196, 123, 142, 0.17);
-
     color: #cda8b1;
-
     font-size: 0.78rem;
-
     font-weight: 500;
-
     transition: 0.25s ease;
 }
 
 .education-subjects span:hover {
     border-color: rgba(196, 154, 74, 0.35);
-
     color: #d6b56a;
-
     background: rgba(196, 154, 74, 0.06);
 }
 
@@ -1510,7 +1157,6 @@ a {
 
     .education-timeline {
         margin-top: 50px;
-
         padding-left: 0;
     }
 
@@ -1520,17 +1166,13 @@ a {
 
     .education-item {
         gap: 22px;
-
         margin-bottom: 38px;
     }
 
     .education-icon {
         flex: 0 0 52px;
-
         width: 52px;
-
         height: 52px;
-
         font-size: 18px;
 
         box-shadow:
@@ -1540,13 +1182,11 @@ a {
 
     .education-card {
         padding: 23px 20px;
-
         border-radius: 15px;
     }
 
     .education-card::before {
         left: -22px;
-
         width: 22px;
     }
 
@@ -1560,19 +1200,16 @@ a {
 
     .education-card p {
         font-size: 0.86rem;
-
         line-height: 1.65;
     }
 
     .education-year {
         font-size: 0.72rem;
-
         padding: 5px 10px;
     }
 
     .education-subjects span {
         font-size: 0.72rem;
-
         padding: 6px 9px;
     }
 }
@@ -1590,15 +1227,11 @@ a {
 
     .education-icon {
         flex: 0 0 46px;
-
         width: 46px;
-
         height: 46px;
-
         font-size: 16px;
 
-        box-shadow:
-            0 0 0 4px #141110;
+        box-shadow: 0 0 0 4px #141110;
     }
 
     .education-card {
@@ -1607,7 +1240,6 @@ a {
 
     .education-card::before {
         left: -18px;
-
         width: 18px;
     }
 
@@ -1628,21 +1260,18 @@ a {
 /* ================= CAREER ================= */
 
 .career-section {
-    background:
-        linear-gradient(
-            135deg,
-            #100e0d,
-            #291b18
-        );
+    background: linear-gradient(
+        135deg,
+        #100e0d,
+        #291b18
+    );
 
     color: #ffffff;
 }
 
 .career-card {
     max-width: 850px;
-
     text-align: center;
-
     margin: auto;
 }
 
@@ -1652,20 +1281,14 @@ a {
 
 .career-card h2 {
     font-size: 46px;
-
     color: #f3e8e2;
 }
 
 .career-card p:not(.eyebrow) {
     color: #bcaea7;
-
     margin: 0 auto 28px;
-
     max-width: 700px;
 }
-
-
-/* Career button / link subtle gold hover */
 
 .career-card .btn:hover {
     border-color: #c49a4a;
@@ -1676,77 +1299,53 @@ a {
 
 .contact-grid {
     display: grid;
-
     grid-template-columns: repeat(3, 1fr);
-
     gap: 18px;
 }
 
 .contact-card {
     display: flex;
-
     align-items: center;
-
     gap: 15px;
-
     padding: 22px;
-
     background: #211b19;
-
     border: 1px solid #3b2d28;
-
     border-radius: 15px;
-
     transition: 0.25s;
 }
 
 .contact-card:hover {
     transform: translateY(-4px);
-
     border-color: #77505a;
-
-    box-shadow:
-        0 12px 30px rgba(0, 0, 0, 0.25);
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.25);
 }
 
 .contact-icon {
     width: 44px;
     height: 44px;
-
     border-radius: 12px;
-
     display: grid;
-
     place-items: center;
-
     background: #352327;
-
     color: #d28a96;
-
     font-weight: 800;
-
     transition: 0.25s ease;
 }
 
 .contact-card:hover .contact-icon {
     color: #d6b56a;
-
     border: 1px solid rgba(196, 154, 74, 0.28);
-
     background: #302326;
 }
 
 .contact-card small {
     display: block;
-
     color: #87766e;
 }
 
 .contact-card strong {
     font-size: 13px;
-
     word-break: break-word;
-
     color: #e2d6cf;
 }
 
@@ -1755,40 +1354,25 @@ a {
 
 footer {
     text-align: center;
-
     padding: 30px 7%;
-
     color: #7e7069;
-
     font-size: 12px;
-
     border-top: 1px solid #302421;
-
     background: #100e0d;
 }
 
 footer p + p {
     margin-top: 5px;
-
     color: #a96270;
 }
 
-
-/* Small footer premium accent */
-
 footer::before {
     content: "";
-
     display: block;
-
     width: 28px;
-
     height: 1px;
-
     margin: 0 auto 14px;
-
     background: #c49a4a;
-
     opacity: 0.65;
 }
 
@@ -1797,7 +1381,6 @@ footer::before {
 
 .reveal {
     opacity: 1;
-
     transform: none;
 }
 
@@ -1805,67 +1388,54 @@ footer::before {
 /* ================= HERO KEYFRAMES ================= */
 
 @keyframes helloIn {
-
     from {
         opacity: 0;
-
         transform: translateX(-22px);
     }
 
     to {
         opacity: 1;
-
         transform: none;
     }
 }
 
 @keyframes nameUp {
-
     from {
         opacity: 0;
-
         transform: translateY(24px);
     }
 
     to {
         opacity: 1;
-
         transform: none;
     }
 }
 
 @keyframes fadeUp {
-
     from {
         opacity: 0;
-
         transform: translateY(18px);
     }
 
     to {
         opacity: 1;
-
         transform: none;
     }
 }
 
 @keyframes visualIn {
-
     from {
         opacity: 0;
-
         transform: translateX(30px);
     }
 
     to {
         opacity: 1;
-
         transform: none;
     }
 }
 
 @keyframes float {
-
     0%,
     100% {
         transform: translateY(0);
@@ -1883,9 +1453,7 @@ footer::before {
 
     .hero {
         grid-template-columns: 1fr;
-
         text-align: center;
-
         padding-top: 70px;
     }
 
@@ -1912,7 +1480,6 @@ footer::before {
 
     .learning-box {
         flex-direction: column;
-
         align-items: flex-start;
     }
 
@@ -1944,23 +1511,14 @@ footer::before {
 
     .navbar nav {
         display: none;
-
         position: absolute;
-
         top: 74px;
-
         left: 0;
-
         right: 0;
-
         background: #171312;
-
         padding: 18px 5%;
-
         border-bottom: 1px solid #302421;
-
         flex-direction: column;
-
         gap: 14px;
     }
 
@@ -1997,7 +1555,6 @@ footer::before {
 
     .profile-ring {
         width: 260px;
-
         height: 260px;
     }
 
@@ -2011,7 +1568,6 @@ footer::before {
 
     .hero-actions {
         flex-direction: column;
-
         align-items: stretch;
     }
 
@@ -2036,32 +1592,35 @@ footer::before {
 
     .project-card {
         padding: 23px;
-
         gap: 15px;
     }
 
     .project-icon {
         min-width: 45px;
-
         width: 45px;
-
         height: 45px;
-
         font-size: 17px;
     }
 
     .featured-project .project-icon {
         min-width: 50px;
-
         width: 50px;
-
         height: 50px;
-
         font-size: 19px;
     }
 
     .project-content h3 {
         font-size: 19px;
+    }
+
+    /* StudyMate links on mobile */
+
+    .project-links {
+        gap: 16px;
+    }
+
+    .project-links .project-link {
+        font-size: 12px;
     }
 
 
@@ -2089,17 +1648,13 @@ footer::before {
 
     .education-item {
         gap: 18px;
-
         margin-bottom: 30px;
     }
 
     .education-icon {
         min-width: 44px;
-
         width: 44px;
-
         height: 44px;
-
         font-size: 16px;
 
         box-shadow:
@@ -2129,7 +1684,6 @@ footer::before {
 
     .education-subjects span {
         font-size: 10px;
-
         padding: 5px 9px;
     }
 }
@@ -2143,11 +1697,8 @@ footer::before {
     *::before,
     *::after {
         animation-duration: 0.01ms !important;
-
         animation-iteration-count: 1 !important;
-
         scroll-behavior: auto !important;
-
         transition-duration: 0.01ms !important;
     }
 }
